@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "4";
+const prefix = "m";
 /////////////////////////
 ////////////////////////
 
@@ -351,4 +351,5 @@ m.sendMessage(args)
 }) 
 } 
 });
+
 client.login(process.env.BOT_TOKEN);
