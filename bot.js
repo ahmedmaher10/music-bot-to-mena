@@ -28,7 +28,7 @@ const prefix = "1";
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
-    
+   
     let args = msg.content.split(' ');
 
 	let command = msg.content.toLowerCase().split(" ")[0];
@@ -385,4 +385,5 @@ m.sendMessage(args)
             message.channel.send(`لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عضو`)
         }
     });
+
 client.login(process.env.BOT_TOKEN);
